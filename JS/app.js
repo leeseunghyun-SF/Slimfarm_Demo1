@@ -12,7 +12,7 @@ window.addEventListener('scroll', onScroll, { passive: true });
   const hero = document.querySelector('.hero');
   if (!hero) return;
   const img = new Image();
-  img.src = 'img/SF7.png';
+  img.src = './img/SF7.png';
   img.onload = () => hero.classList.add('ready');
 })();
 
@@ -63,5 +63,6 @@ if (window.gsap) {
     }
   });
 }
+
 
 if (!bootGSAP()) bootFallback();
