@@ -6,7 +6,7 @@
 
 /* ========== Root Vars ========== */
 :root {
-  --hero: url('../img/SFBGG16.jpg'); /* 히어로 배경 이미지 */
+  --hero: url("../img/SFBGG16.jpg"); /* 히어로 배경 이미지 */
   --text: #0a0a0a;
   --muted: #ffffff;                  /* 현재 디자인 의도 유지 (히어로 텍스트용 화이트) */
   --bg: #ffffff;
@@ -115,7 +115,7 @@ section, header, footer { scroll-margin-top: 80px; }
 /* (옵션) 저해상도 프리뷰 - .ready가 붙으면 사라짐 */
 .hero::before {
   content: ""; position: absolute; inset: 0;
-  background: url('../img/SFBGG16.jpg') center / cover no-repeat;
+  background: url("../img/SFBGG16.jpg") center / cover no-repeat;
   filter: blur(20px); transform: scale(1.05);
   opacity: 1; transition: opacity .6s ease; /* FIX: 초기값 1 → .ready에서 0으로 사라지게 */
 }
@@ -360,7 +360,7 @@ p, .desc {
 
 /* About 섹션 */
 #about{
-  --section-bg: url('../img/D.webp');
+  --section-bg: url("../img/D.webp");
   --section-pos: center 40%; /* 인물/로고가 살짝 위라면 */
   --section-overlay: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35));
 }
@@ -368,7 +368,7 @@ p, .desc {
 
 /* Technology 섹션 */
 #technology{
-  --section-bg: url('../img/PLC1.jpg');
+  --section-bg: url("../img/PLC1.jpg");
   --section-pos: center center;
   --section-overlay: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.55));
 }
@@ -376,14 +376,14 @@ p, .desc {
 
 /* Service 섹션 */
 #service{
-  --section-bg: url('../img/SFBGG1.jpg');
+  --section-bg: url("../img/SFBGG1.jpg");
   --section-overlay: linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.50));
 }
 #service .kicker, #service .title, #service .desc{ color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.25); }
 
 /* My Farm 섹션 */
 #myfarm{
-  --section-bg: url('../img/SFBGG5.jpg');
+  --section-bg: url("../img/SFBGG5.jpg");
   --section-pos: center 35%;
   --section-overlay: linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.45));
 }
@@ -391,7 +391,7 @@ p, .desc {
 
 /* Contact 섹션 */
 #contact{
-  --section-bg: url('../img/SFBGG12.jpg');
+  --section-bg: url("../img/SFBGG12.jpg");
   --section-overlay: linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.50));
 }
 #contact .kicker, #contact .title, #contact .desc{ color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.25); }
@@ -412,6 +412,7 @@ p, .desc {
 }
 
 /* === Section 화이트 베일 공통 (흰 천 효과) === */
+
 
 
 
